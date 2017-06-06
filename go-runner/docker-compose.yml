@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+    user-srv:
+        build: .
+        image: user-srv
+        container_name: user-srv
+        network_mode: host
