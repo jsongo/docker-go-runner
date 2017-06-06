@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    go-builder:
+        build: .
+        image: go-builder:latest
+        volumes: 
+            - /home/jsongo/code/go:/go
+        command: build micro/services/user/srv/main.go
